@@ -57,14 +57,13 @@ $(document).ready(function () {
 })
 
 function addToList() {
+    if (preSearch.includes(city)) {return}
     preSearch.push(city)
-    //if (city) is in preSearch don't add it to the list
     var templi = $('<li></li>')
     templi.text(city)
     templi.attr('class','clickMe')
     $('#addCityHere').append(templi)
     $('.clickMe').click(listClick)
-
 }
 
 function displayWeather() {
