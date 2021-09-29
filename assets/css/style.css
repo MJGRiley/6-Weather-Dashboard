@@ -1,16 +1,59 @@
-* {
-    border: 1px black solid;
+h1 {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
 }
 
-header {
-    background-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+aside {
+    width: 30%;
 }
 
-input {
-    margin: 20px;
+.rightSide {
+    width: 70%;
+    display: inline-block;
 }
 
+p {
+    margin: 0;
+}
+
+#text{
+    margin-left: 5px;
+}
 #addCityHere {
-    border-top: 1px grey solid;
-    margin: 10px;
+    border-top: 2px solid gray;
+    margin: 5px;
+}
+
+#fiveDay li {
+    background: rgb(94, 102, 177);
+    padding: 5px;
+    position: relative;
+}
+
+.div2 {
+    position: relative;
+}
+
+.topicon {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+
+.icon {
+    height: 50px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

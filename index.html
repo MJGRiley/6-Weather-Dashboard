@@ -12,23 +12,25 @@
     </head>
     <body>
         <header><h1>Weather Dashboard</h1></header>
-        <main class="parent">
-            <aside class="div1">
-                <input type="text" value="Atlanta">
+        <main class="d-flex">
+            <aside>
+                <input id="text" type="text" placeholder="Enter City">
                 <input type="submit" value="Search">
-                <ul id="addCityHere"></ul>
+                <ul class="d-flex flex-column-reverse" id="addCityHere"></ul>
             </aside>
-            <div class="div2">
-                <h2 id="cAndD">City & Date</h2>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" id="icon">
-                <p id="temp">Temp:</p>
-                <p id="wind">Wind</p>
-                <p id="hum">Humidity</p>
-                <p id="uv">UVIndex:</p>
-            </div class="div3">
-            <h3>5-Day Forecast:</h3>
-            <div display=flex>
-                <ul id="fiveDay"></ul>
+            <div class="rightSide">
+                <div class="div2">
+                    <h2 id="cAndD">City & Date</h2>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" class="topicon">
+                    <p id="temp">Temp:</p>
+                    <p id="wind">Wind:</p>
+                    <p id="hum">Humidity</p>
+                    <p id="uv">UVIndex:</p>
+                </div>
+                <h3>5-Day Forecast:</h3>
+                <div >
+                    <ul class="justify-content-around d-flex" id="fiveDay"></ul>
+                </div>
             </div>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
