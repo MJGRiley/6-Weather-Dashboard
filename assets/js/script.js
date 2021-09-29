@@ -11,7 +11,7 @@ var lat
 var lon
 
 function queryCity() {
-    //if (!)
+    //if (!) something but a city is entered, ask for new city name and return
     city = tArea.val().trim()
     localStorage.setItem("cityName",city)
     var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=d5831cd7b791b23429c5fcd8777aab06&units=imperial"
@@ -22,8 +22,9 @@ function queryCity() {
         return res.json()
     })
     .then(function (data) {
-        console.log(data)
+        console.log(data.name)
         cityInfo = data
+        city = data.name
         queryTwo()
     })
 }
@@ -44,6 +45,7 @@ function queryTwo() {
         localStorage.setItem("lastCity",JSON.stringify(data))
     })
 }
+
 $(document).ready(function () {
     if (!JSON.parse(localStorage.getItem("lastCity"))){ 
         return
@@ -55,8 +57,8 @@ $(document).ready(function () {
 })
 
 function addToList() {
-    if (city)
     preSearch.push(city)
+    //if (city) is in preSearch don't add it to the list
     var templi = $('<li></li>')
     templi.text(city)
     templi.attr('class','clickMe')
@@ -85,9 +87,8 @@ function displayWeather() {
             cityInfo.daily[i].humidity+"%</p>")).appendTo($('#fiveDay'))
     }
 }
+
 function listClick() {
-    console.log($(this).text())
     tArea.val($(this).text())
     queryCity()
-
 }
