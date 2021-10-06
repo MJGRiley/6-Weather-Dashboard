@@ -6,4 +6,4 @@
 * [Github pages](https://MJGRiley.github.io/6-Weather-Dashboard)
 
 Mockup given:
-![Image](./Assets/Images/Weather-Dashboard_TN.png)
+![Image](./assets/images/Weather-Dashboard_TN.png)
