@@ -5,5 +5,5 @@
 * [Github repo](https://github.com/MJGRiley/6-Weather-Dashboard)
 * [Github pages](https://MJGRiley.github.io/6-Weather-Dashboard)
 
-Mockup given:
+
 ![Image](./assets/images/Weather-Dashboard_TN.png)
