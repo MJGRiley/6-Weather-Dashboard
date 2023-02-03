@@ -1,4 +1,4 @@
-# Assignment 6-Weather-Dashboard
+# Weather-Dashboard
     
     Searches Open Weather API for user Input city name. Displays 5 day forecast & current day
 
